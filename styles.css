@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    animation: backgroundAnimation 15s ease infinite;
+    background: rgba(51, 51, 51, 0.8);
+    background-size: 400% 400%;
+}
+.header {
+    background-image: url('pictures/backround.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    border: 10px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;  
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: rgb(42, 38, 38); 
+    text-decoration: none; 
+    font-size: 20px;
+    font-family: sans-serif; 
+}
+
+nav a:hover {
+    background: hsl(0, 0%, 53%);
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    letter-spacing: 2px;
+    line-height: 40px; 
+}
+
+#home, #about, #passion, #hobbies, #contact {
+    background-image: url('pictures/backround.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.column {
+    width: 20%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin: 0 -5px;
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin-right: 15px;
+    color: #333; 
+    text-decoration: none;
+    font-size: 24px; 
+    transition: color 0.3s ease; 
+    display: inline-block;
+    border-radius: 60px;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+}
+
+.social-icon:hover {
+    color: #007bff; 
+}
+
+.passion-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.passion-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.passion-text {
+    flex: 1; 
+    margin-right: 20px;
+    letter-spacing: 2px; 
+    line-height: 40px; 
+}
+
+.passion-image img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.hobby-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.hobby-text {
+    flex: 1;
+    margin-right: 20px;
+    letter-spacing: 2px; 
+    line-height: 40px; 
+}
+
+.hobby-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hobby-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
